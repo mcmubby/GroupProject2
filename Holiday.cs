@@ -14,14 +14,6 @@ namespace GroupProject2
             this._month = month;
         }
 
-        //Default Holiday
-        private Holiday()
-        {
-            this._day = 1;
-            this._name = "Independence Day";
-            this._month = "October";
-        }
-
         // Compare two objects of this class. Needs to be accessible from the class itself
         public static bool inSameMonth(Holiday firstHoliday, Holiday secondHoliday)
         {
@@ -43,7 +35,7 @@ namespace GroupProject2
 
         public static Holiday NigeriasIndependence()
         {
-            return new Holiday();
+            return new Holiday("Independence Day", 1, "October");
         }
     }
 }

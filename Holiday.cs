@@ -14,7 +14,6 @@ namespace GroupProject2
             this._month = month;
         }
 
-        // Compare two objects of this class. Needs to be accessible from the class itself
         public static bool inSameMonth(Holiday firstHoliday, Holiday secondHoliday)
         {
             return firstHoliday._month.ToLower() == secondHoliday._month.ToLower() ? true : false;
@@ -28,7 +27,6 @@ namespace GroupProject2
                daySum += holiday._day;
             }
             
-            //return average
             double avgDay = daySum / holidays.Length;
             return avgDay;
         }

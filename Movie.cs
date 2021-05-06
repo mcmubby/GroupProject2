@@ -24,13 +24,13 @@ namespace GroupProject2
         public Movie[] getPG(Movie[] movies)
         {
             Movie[] pgMovies = new Movie[movies.Length];
-            int count = 1;
+            int count = 0;
             
             foreach (var movie in movies)
             {
                 if (movie._rating.ToUpper() == "PG")
                 {
-                    pgMovies[count-1] = movie;
+                    pgMovies[count] = movie;
                     count++;
                 }
             }

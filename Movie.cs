@@ -21,7 +21,7 @@ namespace GroupProject2
             this._rating = "PG";
         }
 
-        public Movie[] getPG(Movie[] movies)
+        public static Movie[] getPG(Movie[] movies)
         {
             Movie[] pgMovies = new Movie[movies.Length];
             int count = 0;

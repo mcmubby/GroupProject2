@@ -3,9 +3,9 @@ namespace GroupProject2
 {
     public class Holiday
     {
-        public string _name;
-        public int _day;
-        public string _month;
+        public string _name { get; private set; }
+        public int _day { get; private set; }
+        public string _month { get; private set; }
 
         public Holiday(string name, int day, string month)
         {

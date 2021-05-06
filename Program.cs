@@ -6,7 +6,11 @@ namespace GroupProject2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var nigeria = Holiday.NigeriasIndependence();
+            var xmas = new Holiday("Christmas", 25, "December");
+            Console.WriteLine($"{nigeria._month} {nigeria._day} {nigeria._name}");
+            System.Console.WriteLine($"{xmas._day} {xmas._month} {xmas._name}");
+            Console.WriteLine(Holiday.inSameMonth(nigeria,xmas));
         }
     }
 }
